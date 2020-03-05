@@ -11,8 +11,6 @@ Name | Type | Description | Notes
 **order_date** | **datetime** |  | [optional] 
 **start** | **datetime** |  | [optional] 
 **end** | **datetime** |  | [optional] 
-**fixed_rate** | **float** |  | [optional] 
-**hourly_rate** | **float** |  | [optional] 
 **color** | **str** |  | [optional] 
 **budget** | **float** |  | 
 **time_budget** | **int** |  | 

@@ -6,8 +6,6 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **name** | **str** |  | 
 **visible** | **bool** |  | 
-**fixed_rate** | **float** |  | [optional] 
-**hourly_rate** | **float** |  | [optional] 
 **color** | **str** |  | [optional] 
 **project** | **int** |  | [optional] 
 **meta_fields** | [**list[ActivityMeta]**](ActivityMeta.md) |  | [optional] 

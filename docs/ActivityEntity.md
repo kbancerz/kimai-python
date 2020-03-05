@@ -7,8 +7,6 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **comment** | **str** |  | [optional] 
 **visible** | **bool** |  | 
-**fixed_rate** | **float** |  | [optional] 
-**hourly_rate** | **float** |  | [optional] 
 **color** | **str** |  | [optional] 
 **budget** | **float** |  | 
 **time_budget** | **int** |  | 

@@ -8,8 +8,6 @@ Name | Type | Description | Notes
 **visible** | **bool** |  | 
 **start** | **datetime** |  | [optional] 
 **end** | **datetime** |  | [optional] 
-**fixed_rate** | **float** |  | [optional] 
-**hourly_rate** | **float** |  | [optional] 
 **color** | **str** |  | [optional] 
 **teams** | [**list[Team2]**](Team2.md) |  | [optional] 
 **customer** | **int** |  | [optional] 

@@ -6,8 +6,6 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **name** | **str** |  | 
 **visible** | **bool** |  | 
-**fixed_rate** | **float** |  | [optional] 
-**hourly_rate** | **float** |  | [optional] 
 **color** | **str** |  | [optional] 
 **teams** | [**list[Team4]**](Team4.md) |  | [optional] 
 **meta_fields** | [**list[CustomerMeta]**](CustomerMeta.md) |  | [optional] 
