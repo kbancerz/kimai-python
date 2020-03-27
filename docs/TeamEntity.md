@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
 **name** | **str** |  | 
-**teamlead** | [**User**](User.md) |  | 
-**users** | [**list[User]**](User.md) |  | [optional] 
+**teamlead** | [**User2**](User2.md) |  | 
+**users** | [**list[User2]**](User2.md) |  | [optional] 
 **customers** | [**list[Customer]**](Customer.md) |  | [optional] 
 **projects** | [**list[Project]**](Project.md) |  | [optional] 
 

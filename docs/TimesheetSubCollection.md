@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **user** | **int** |  | [optional] 
 **tags** | **list[str]** |  | [optional] 
 **meta_fields** | [**list[TimesheetMeta2]**](TimesheetMeta2.md) |  | [optional] 
+**internal_rate** | **float** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
