@@ -97,8 +97,8 @@ class DefaultApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'project' in params and not re.search(r'\\d+', params['project']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `project` when calling `api_activities_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
+        if 'project' in params and not re.search(r'\d+', params['project']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `project` when calling `api_activities_get`, must conform to the pattern `/\d+/`")  # noqa: E501
         if 'visible' in params and not re.search(r'1|2|3', params['visible']):  # noqa: E501
             raise ValueError("Invalid value for parameter `visible` when calling `api_activities_get`, must conform to the pattern `/1|2|3/`")  # noqa: E501
         if 'globals' in params and not re.search(r'true', params['globals']):  # noqa: E501
@@ -109,8 +109,8 @@ class DefaultApi(object):
             raise ValueError("Invalid value for parameter `order_by` when calling `api_activities_get`, must conform to the pattern `/id|name|project/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_activities_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_activities_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
+        if 'term' in params and not re.search(r'[a-zA-Z0-9 \-,:]+', params['term']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `term` when calling `api_activities_get`, must conform to the pattern `/[a-zA-Z0-9 \-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -748,14 +748,14 @@ class DefaultApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'visible' in params and not re.search(r'\\d+', params['visible']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `visible` when calling `api_customers_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
+        if 'visible' in params and not re.search(r'\d+', params['visible']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `visible` when calling `api_customers_get`, must conform to the pattern `/\d+/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_customers_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         if 'order_by' in params and not re.search(r'id|name', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_customers_get`, must conform to the pattern `/id|name/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_customers_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
+        if 'term' in params and not re.search(r'[a-zA-Z0-9 \-,:]+', params['term']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `term` when calling `api_customers_get`, must conform to the pattern `/[a-zA-Z0-9 \-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1314,18 +1314,18 @@ class DefaultApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'customer' in params and not re.search(r'\\d+', params['customer']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `customer` when calling `api_projects_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'visible' in params and not re.search(r'\\d+', params['visible']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `visible` when calling `api_projects_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
+        if 'customer' in params and not re.search(r'\d+', params['customer']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `customer` when calling `api_projects_get`, must conform to the pattern `/\d+/`")  # noqa: E501
+        if 'visible' in params and not re.search(r'\d+', params['visible']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `visible` when calling `api_projects_get`, must conform to the pattern `/\d+/`")  # noqa: E501
         if 'ignore_dates' in params and not re.search(r'1', params['ignore_dates']):  # noqa: E501
             raise ValueError("Invalid value for parameter `ignore_dates` when calling `api_projects_get`, must conform to the pattern `/1/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_projects_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         if 'order_by' in params and not re.search(r'id|name|customer', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_projects_get`, must conform to the pattern `/id|name|customer/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_projects_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
+        if 'term' in params and not re.search(r'[a-zA-Z0-9 \-,:]+', params['term']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `term` when calling `api_projects_get`, must conform to the pattern `/[a-zA-Z0-9 \-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -3202,18 +3202,18 @@ class DefaultApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'user' in params and not re.search(r'\\d+|all', params['user']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_get`, must conform to the pattern `/\\d+|all/`")  # noqa: E501
-        if 'customer' in params and not re.search(r'\\d+', params['customer']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `customer` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'project' in params and not re.search(r'\\d+', params['project']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `project` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'activity' in params and not re.search(r'\\d+', params['activity']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `activity` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'page' in params and not re.search(r'\\d+', params['page']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `page` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'size' in params and not re.search(r'\\d+', params['size']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
+        if 'user' in params and not re.search(r'\d+|all', params['user']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_get`, must conform to the pattern `/\d+|all/`")  # noqa: E501
+        if 'customer' in params and not re.search(r'\d+', params['customer']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `customer` when calling `api_timesheets_get`, must conform to the pattern `/\d+/`")  # noqa: E501
+        if 'project' in params and not re.search(r'\d+', params['project']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `project` when calling `api_timesheets_get`, must conform to the pattern `/\d+/`")  # noqa: E501
+        if 'activity' in params and not re.search(r'\d+', params['activity']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `activity` when calling `api_timesheets_get`, must conform to the pattern `/\d+/`")  # noqa: E501
+        if 'page' in params and not re.search(r'\d+', params['page']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `page` when calling `api_timesheets_get`, must conform to the pattern `/\d+/`")  # noqa: E501
+        if 'size' in params and not re.search(r'\d+', params['size']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_get`, must conform to the pattern `/\d+/`")  # noqa: E501
         if 'order_by' in params and not re.search(r'id|begin|end|rate', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_timesheets_get`, must conform to the pattern `/id|begin|end|rate/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
@@ -3224,8 +3224,8 @@ class DefaultApi(object):
             raise ValueError("Invalid value for parameter `active` when calling `api_timesheets_get`, must conform to the pattern `/0|1/`")  # noqa: E501
         if 'full' in params and not re.search(r'true', params['full']):  # noqa: E501
             raise ValueError("Invalid value for parameter `full` when calling `api_timesheets_get`, must conform to the pattern `/true/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_timesheets_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
+        if 'term' in params and not re.search(r'[a-zA-Z0-9 \-,:]+', params['term']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `term` when calling `api_timesheets_get`, must conform to the pattern `/[a-zA-Z0-9 \-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -4075,10 +4075,10 @@ class DefaultApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'user' in params and not re.search(r'\\d+|all', params['user']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_recent_get`, must conform to the pattern `/\\d+|all/`")  # noqa: E501
-        if 'size' in params and not re.search(r'\\d+', params['size']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_recent_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
+        if 'user' in params and not re.search(r'\d+|all', params['user']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_recent_get`, must conform to the pattern `/\d+|all/`")  # noqa: E501
+        if 'size' in params and not re.search(r'\d+', params['size']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_recent_get`, must conform to the pattern `/\d+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -4180,8 +4180,8 @@ class DefaultApi(object):
             raise ValueError("Invalid value for parameter `order_by` when calling `api_users_get`, must conform to the pattern `/id|username|alias|email/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_users_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_users_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
+        if 'term' in params and not re.search(r'[a-zA-Z0-9 \-,:]+', params['term']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `term` when calling `api_users_get`, must conform to the pattern `/[a-zA-Z0-9 \-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
