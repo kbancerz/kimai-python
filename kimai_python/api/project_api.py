@@ -44,7 +44,7 @@ class ProjectApi(object):
         :param async_req bool
         :param str customer: Customer ID to filter projects
         :param str customers: Comma separated list of customer IDs to filter projects
-        :param str visible: Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default; 1)
+        :param str visible: Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default: 1)
         :param str start: Only projects that started before this date will be included. Allowed format: HTML5 (default: now, if end is also empty)
         :param str end: Only projects that ended after this date will be included. Allowed format: HTML5 (default: now, if start is also empty)
         :param str ignore_dates: If set, start and end are completely ignored. Allowed values: 1 (default: off)
@@ -73,7 +73,7 @@ class ProjectApi(object):
         :param async_req bool
         :param str customer: Customer ID to filter projects
         :param str customers: Comma separated list of customer IDs to filter projects
-        :param str visible: Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default; 1)
+        :param str visible: Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default: 1)
         :param str start: Only projects that started before this date will be included. Allowed format: HTML5 (default: now, if end is also empty)
         :param str end: Only projects that ended after this date will be included. Allowed format: HTML5 (default: now, if start is also empty)
         :param str ignore_dates: If set, start and end are completely ignored. Allowed values: 1 (default: off)
@@ -113,8 +113,6 @@ class ProjectApi(object):
             raise ValueError("Invalid value for parameter `order` when calling `api_projects_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         if 'order_by' in params and not re.search(r'id|name|customer', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_projects_get`, must conform to the pattern `/id|name|customer/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_projects_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

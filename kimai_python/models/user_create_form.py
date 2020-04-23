@@ -216,7 +216,7 @@ class UserCreateForm(object):
         """
         if language is None:
             raise ValueError("Invalid value for `language`, must not be `None`")  # noqa: E501
-        allowed_values = ["ar", "cs", "de", "de_CH", "da", "en", "es", "eu", "fr", "hu", "it", "ja", "ko", "nl", "pl", "pt_BR", "ru", "sk", "sv", "tr", "zh_CN"]  # noqa: E501
+        allowed_values = ["ar", "cs", "de", "de_CH", "da", "en", "eo", "es", "eu", "fr", "hu", "it", "ja", "ko", "nl", "pl", "pt_BR", "ru", "sk", "sv", "tr", "zh_CN"]  # noqa: E501
         if language not in allowed_values:
             raise ValueError(
                 "Invalid value for `language` ({0}), must be one of {1}"  # noqa: E501

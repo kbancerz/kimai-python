@@ -46,7 +46,7 @@ class CustomerApi(object):
         :param str order: The result order. Allowed values: ASC, DESC (default: ASC)
         :param str order_by: The field by which results will be ordered. Allowed values: id, name (default: name)
         :param str term: Free search term
-        :return: list[CustomerEntity]
+        :return: list[CustomerCollection]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -70,7 +70,7 @@ class CustomerApi(object):
         :param str order: The result order. Allowed values: ASC, DESC (default: ASC)
         :param str order_by: The field by which results will be ordered. Allowed values: id, name (default: name)
         :param str term: Free search term
-        :return: list[CustomerEntity]
+        :return: list[CustomerCollection]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -97,8 +97,6 @@ class CustomerApi(object):
             raise ValueError("Invalid value for parameter `order` when calling `api_customers_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         if 'order_by' in params and not re.search(r'id|name', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_customers_get`, must conform to the pattern `/id|name/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_customers_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -130,7 +128,7 @@ class CustomerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[CustomerEntity]',  # noqa: E501
+            response_type='list[CustomerCollection]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

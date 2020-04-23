@@ -228,8 +228,6 @@ class TimesheetApi(object):
             raise ValueError("Invalid value for parameter `active` when calling `api_timesheets_get`, must conform to the pattern `/0|1/`")  # noqa: E501
         if 'full' in params and not re.search(r'true', params['full']):  # noqa: E501
             raise ValueError("Invalid value for parameter `full` when calling `api_timesheets_get`, must conform to the pattern `/true/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_timesheets_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

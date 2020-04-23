@@ -113,8 +113,6 @@ class ActivityApi(object):
             raise ValueError("Invalid value for parameter `order_by` when calling `api_activities_get`, must conform to the pattern `/id|name|project/`")  # noqa: E501
         if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_activities_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
-        if 'term' in params and not re.search(r'[a-zA-Z0-9 \\-,:]+', params['term']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `term` when calling `api_activities_get`, must conform to the pattern `/[a-zA-Z0-9 \\-,:]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

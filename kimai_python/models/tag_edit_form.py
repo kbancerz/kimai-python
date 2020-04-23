@@ -31,20 +31,24 @@ class TagEditForm(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'name': 'str'
+        'name': 'str',
+        'color': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'color': 'color'
     }
 
-    def __init__(self, name=None):  # noqa: E501
+    def __init__(self, name=None, color=None):  # noqa: E501
         """TagEditForm - a model defined in Swagger"""  # noqa: E501
 
         self._name = None
+        self._color = None
         self.discriminator = None
 
         self.name = name
+        self.color = color
 
     @property
     def name(self):
@@ -68,6 +72,29 @@ class TagEditForm(object):
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
         self._name = name
+
+    @property
+    def color(self):
+        """Gets the color of this TagEditForm.  # noqa: E501
+
+
+        :return: The color of this TagEditForm.  # noqa: E501
+        :rtype: str
+        """
+        return self._color
+
+    @color.setter
+    def color(self, color):
+        """Sets the color of this TagEditForm.
+
+
+        :param color: The color of this TagEditForm.  # noqa: E501
+        :type: str
+        """
+        if color is None:
+            raise ValueError("Invalid value for `color`, must not be `None`")  # noqa: E501
+
+        self._color = color
 
     def to_dict(self):
         """Returns the model properties as a dict"""

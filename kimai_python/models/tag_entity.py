@@ -33,21 +33,24 @@ class TagEntity(object):
     swagger_types = {
         'id': 'int',
         'name': 'str',
-        'timesheets': 'list[Timesheet]'
+        'timesheets': 'list[Timesheet]',
+        'color': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'timesheets': 'timesheets'
+        'timesheets': 'timesheets',
+        'color': 'color'
     }
 
-    def __init__(self, id=None, name=None, timesheets=None):  # noqa: E501
+    def __init__(self, id=None, name=None, timesheets=None, color=None):  # noqa: E501
         """TagEntity - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
         self._name = None
         self._timesheets = None
+        self._color = None
         self.discriminator = None
 
         if id is not None:
@@ -55,6 +58,8 @@ class TagEntity(object):
         self.name = name
         if timesheets is not None:
             self.timesheets = timesheets
+        if color is not None:
+            self.color = color
 
     @property
     def id(self):
@@ -126,6 +131,27 @@ class TagEntity(object):
         """
 
         self._timesheets = timesheets
+
+    @property
+    def color(self):
+        """Gets the color of this TagEntity.  # noqa: E501
+
+
+        :return: The color of this TagEntity.  # noqa: E501
+        :rtype: str
+        """
+        return self._color
+
+    @color.setter
+    def color(self, color):
+        """Sets the color of this TagEntity.
+
+
+        :param color: The color of this TagEntity.  # noqa: E501
+        :type: str
+        """
+
+        self._color = color
 
     def to_dict(self):
         """Returns the model properties as a dict"""
