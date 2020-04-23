@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.timesheet_sub_collection import TimesheetSubCollection  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.timesheet_sub_collection import TimesheetSubCollection  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestTimesheetSubCollection(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTimesheetSubCollection(unittest.TestCase):
     def testTimesheetSubCollection(self):
         """Test TimesheetSubCollection"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.timesheet_sub_collection.TimesheetSubCollection()  # noqa: E501
+        # model = kimai_python.models.timesheet_sub_collection.TimesheetSubCollection()  # noqa: E501
         pass
 
 

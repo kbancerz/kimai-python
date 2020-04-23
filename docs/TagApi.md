@@ -1,4 +1,4 @@
-# swagger_client.TagApi
+# kimai_python.TagApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,23 +18,23 @@ Fetch all existing tags
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TagApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TagApi(kimai_python.ApiClient(configuration))
 name = 'name_example' # str | Search term to filter tag list (optional)
 
 try:
@@ -75,23 +75,23 @@ Delete a tag
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TagApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TagApi(kimai_python.ApiClient(configuration))
 id = 56 # int | Tag ID to delete
 
 try:
@@ -133,24 +133,24 @@ Creates a new tag and returns it afterwards
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TagApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TagEditForm() # TagEditForm | 
+api_instance = kimai_python.TagApi(kimai_python.ApiClient(configuration))
+body = kimai_python.TagEditForm() # TagEditForm | 
 
 try:
     # Creates a new tag

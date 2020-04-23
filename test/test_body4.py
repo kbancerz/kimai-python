@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.body4 import Body4  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.body4 import Body4  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestBody4(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestBody4(unittest.TestCase):
     def testBody4(self):
         """Test Body4"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.body4.Body4()  # noqa: E501
+        # model = kimai_python.models.body4.Body4()  # noqa: E501
         pass
 
 

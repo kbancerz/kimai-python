@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tag_edit_form import TagEditForm  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.tag_edit_form import TagEditForm  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestTagEditForm(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTagEditForm(unittest.TestCase):
     def testTagEditForm(self):
         """Test TagEditForm"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tag_edit_form.TagEditForm()  # noqa: E501
+        # model = kimai_python.models.tag_edit_form.TagEditForm()  # noqa: E501
         pass
 
 

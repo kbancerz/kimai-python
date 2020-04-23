@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.team_api import TeamApi  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.api.team_api import TeamApi  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestTeamApi(unittest.TestCase):
     """TeamApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.team_api.TeamApi()  # noqa: E501
+        self.api = kimai_python.api.team_api.TeamApi()  # noqa: E501
 
     def tearDown(self):
         pass

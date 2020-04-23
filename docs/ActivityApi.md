@@ -1,4 +1,4 @@
-# swagger_client.ActivityApi
+# kimai_python.ActivityApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,23 +23,23 @@ Returns a collection of activities
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 project = 'project_example' # str | Project ID to filter activities (optional)
 projects = 'projects_example' # str | Comma separated list of project IDs to filter activities (optional)
 visible = 'visible_example' # str | Visibility status to filter activities. Allowed values: 1=visible, 2=hidden, 3=all (default: 1) (optional)
@@ -94,23 +94,23 @@ Returns one activity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 id = 56 # int | Activity ID to fetch
 
 try:
@@ -151,25 +151,25 @@ Sets the value of a meta-field for an existing activity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 id = 56 # int | Activity record ID to set the meta-field value for
-body = swagger_client.Body() # Body |  (optional)
+body = kimai_python.Body() # Body |  (optional)
 
 try:
     # Sets the value of a meta-field for an existing activity
@@ -212,24 +212,24 @@ Update an existing activity, you can pass all or just a subset of all attributes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ActivityEditForm() # ActivityEditForm | 
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
+body = kimai_python.ActivityEditForm() # ActivityEditForm | 
 id = 56 # int | Activity ID to update
 
 try:
@@ -271,23 +271,23 @@ Returns a collection of all rates for one activity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The activity whose rates will be returned
 
 try:
@@ -328,25 +328,25 @@ Adds a new rate to an activity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The activity to add the rate for
-body = swagger_client.ActivityRateForm() # ActivityRateForm | 
+body = kimai_python.ActivityRateForm() # ActivityRateForm | 
 
 try:
     # Adds a new rate to an activity
@@ -387,23 +387,23 @@ Deletes one rate for an activity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The activity whose rate will be removed
 rate_id = 56 # int | The rate to remove
 
@@ -447,24 +447,24 @@ Creates a new activity and returns it afterwards
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivityApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ActivityEditForm() # ActivityEditForm | 
+api_instance = kimai_python.ActivityApi(kimai_python.ApiClient(configuration))
+body = kimai_python.ActivityEditForm() # ActivityEditForm | 
 
 try:
     # Creates a new activity

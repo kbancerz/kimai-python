@@ -1,4 +1,4 @@
-# swagger_client.CustomerApi
+# kimai_python.CustomerApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,23 +23,23 @@ Returns a collection of customers
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 visible = 'visible_example' # str | Visibility status to filter activities (1=visible, 2=hidden, 3=both) (optional)
 order = 'order_example' # str | The result order. Allowed values: ASC, DESC (default: ASC) (optional)
 order_by = 'order_by_example' # str | The field by which results will be ordered. Allowed values: id, name (default: name) (optional)
@@ -86,23 +86,23 @@ Returns one customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 id = 'id_example' # str | 
 
 try:
@@ -143,25 +143,25 @@ Sets the value of a meta-field for an existing customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 id = 56 # int | Customer record ID to set the meta-field value for
-body = swagger_client.Body1() # Body1 |  (optional)
+body = kimai_python.Body1() # Body1 |  (optional)
 
 try:
     # Sets the value of a meta-field for an existing customer
@@ -204,24 +204,24 @@ Update an existing customer, you can pass all or just a subset of all attributes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CustomerEditForm() # CustomerEditForm | 
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
+body = kimai_python.CustomerEditForm() # CustomerEditForm | 
 id = 56 # int | Customer ID to update
 
 try:
@@ -263,23 +263,23 @@ Returns a collection of all rates for one customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The customer whose rates will be returned
 
 try:
@@ -320,25 +320,25 @@ Adds a new rate to a customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The customer to add the rate for
-body = swagger_client.CustomerRateForm() # CustomerRateForm | 
+body = kimai_python.CustomerRateForm() # CustomerRateForm | 
 
 try:
     # Adds a new rate to a customer
@@ -379,23 +379,23 @@ Deletes one rate for an customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The customer whose rate will be removed
 rate_id = 56 # int | The rate to remove
 
@@ -439,24 +439,24 @@ Creates a new customer and returns it afterwards
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CustomerEditForm() # CustomerEditForm | 
+api_instance = kimai_python.CustomerApi(kimai_python.ApiClient(configuration))
+body = kimai_python.CustomerEditForm() # CustomerEditForm | 
 
 try:
     # Creates a new customer

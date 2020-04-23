@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.customer_edit_form import CustomerEditForm  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.customer_edit_form import CustomerEditForm  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestCustomerEditForm(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCustomerEditForm(unittest.TestCase):
     def testCustomerEditForm(self):
         """Test CustomerEditForm"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.customer_edit_form.CustomerEditForm()  # noqa: E501
+        # model = kimai_python.models.customer_edit_form.CustomerEditForm()  # noqa: E501
         pass
 
 

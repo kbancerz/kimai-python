@@ -1,4 +1,4 @@
-# swagger_client.TeamApi
+# kimai_python.TeamApi
 
 All URIs are relative to *http://localhost*
 
@@ -26,23 +26,23 @@ Fetch all existing teams
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 
 try:
     # Fetch all existing teams
@@ -79,23 +79,23 @@ Revokes access for a customer from a team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team whose permission will be revoked
 customer_id = 56 # int | The customer to remove (Customer ID)
 
@@ -138,23 +138,23 @@ Grant the team access to a customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team that is granted access
 customer_id = 56 # int | The customer to grant acecess to (Customer ID)
 
@@ -197,23 +197,23 @@ Delete a team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | Team ID to delete
 
 try:
@@ -253,23 +253,23 @@ Returns one team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 'id_example' # str | 
 
 try:
@@ -310,23 +310,23 @@ Removes a member from the team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team from which the member will be removed
 user_id = 56 # int | The team member to remove (User ID)
 
@@ -369,23 +369,23 @@ Add a new member to a team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team which will receive the new member
 user_id = 56 # int | The team member to add (User ID)
 
@@ -430,24 +430,24 @@ Update an existing team, you can pass all or just a subset of all attributes (pa
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TeamEditForm() # TeamEditForm | 
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
+body = kimai_python.TeamEditForm() # TeamEditForm | 
 id = 56 # int | Team ID to update
 
 try:
@@ -489,23 +489,23 @@ Revokes access for a project from a team
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team whose permission will be revoked
 project_id = 56 # int | The project to remove (Project ID)
 
@@ -548,23 +548,23 @@ Grant the team access to a project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
 id = 56 # int | The team that is granted access
 project_id = 56 # int | The project to grant acecess to (Project ID)
 
@@ -609,24 +609,24 @@ Creates a new team and returns it afterwards
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TeamApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TeamEditForm() # TeamEditForm | 
+api_instance = kimai_python.TeamApi(kimai_python.ApiClient(configuration))
+body = kimai_python.TeamEditForm() # TeamEditForm | 
 
 try:
     # Creates a new team

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.activity_rate import ActivityRate  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.activity_rate import ActivityRate  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestActivityRate(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestActivityRate(unittest.TestCase):
     def testActivityRate(self):
         """Test ActivityRate"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.activity_rate.ActivityRate()  # noqa: E501
+        # model = kimai_python.models.activity_rate.ActivityRate()  # noqa: E501
         pass
 
 

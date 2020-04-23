@@ -1,4 +1,4 @@
-# swagger_client.DefaultApi
+# kimai_python.DefaultApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,23 +19,23 @@ Returns the user specific locale configuration
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.DefaultApi(kimai_python.ApiClient(configuration))
 
 try:
     # Returns the user specific locale configuration
@@ -72,23 +72,23 @@ Returns the instance specific timesheet configuration
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.DefaultApi(kimai_python.ApiClient(configuration))
 
 try:
     # Returns the instance specific timesheet configuration
@@ -125,23 +125,23 @@ A testing route for the API
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.DefaultApi(kimai_python.ApiClient(configuration))
 
 try:
     # A testing route for the API
@@ -177,23 +177,23 @@ Returns information about the Kimai release
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiToken
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-TOKEN'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-TOKEN'] = 'Bearer'
 # Configure API key authorization: apiUser
-configuration = swagger_client.Configuration()
+configuration = kimai_python.Configuration()
 configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-AUTH-USER'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = kimai_python.DefaultApi(kimai_python.ApiClient(configuration))
 
 try:
     # Returns information about the Kimai release

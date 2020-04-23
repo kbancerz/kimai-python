@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.timesheet_api import TimesheetApi  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.api.timesheet_api import TimesheetApi  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestTimesheetApi(unittest.TestCase):
     """TimesheetApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.timesheet_api.TimesheetApi()  # noqa: E501
+        self.api = kimai_python.api.timesheet_api.TimesheetApi()  # noqa: E501
 
     def tearDown(self):
         pass

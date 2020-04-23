@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.project_meta_field import ProjectMetaField  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.project_meta_field import ProjectMetaField  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestProjectMetaField(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProjectMetaField(unittest.TestCase):
     def testProjectMetaField(self):
         """Test ProjectMetaField"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.project_meta_field.ProjectMetaField()  # noqa: E501
+        # model = kimai_python.models.project_meta_field.ProjectMetaField()  # noqa: E501
         pass
 
 

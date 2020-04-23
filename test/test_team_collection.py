@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.team_collection import TeamCollection  # noqa: E501
-from swagger_client.rest import ApiException
+import kimai_python
+from kimai_python.models.team_collection import TeamCollection  # noqa: E501
+from kimai_python.rest import ApiException
 
 
 class TestTeamCollection(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTeamCollection(unittest.TestCase):
     def testTeamCollection(self):
         """Test TeamCollection"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.team_collection.TeamCollection()  # noqa: E501
+        # model = kimai_python.models.team_collection.TeamCollection()  # noqa: E501
         pass
 
 
