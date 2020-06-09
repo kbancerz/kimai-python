@@ -200,33 +200,33 @@ class TimesheetApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'user' in params and not re.search(r'\\d+|all', params['user']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_get`, must conform to the pattern `/\\d+|all/`")  # noqa: E501
-        if 'customer' in params and not re.search(r'\\d+', params['customer']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `customer` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'customers' in params and not re.search(r'[\\d|,]+', params['customers']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `customers` when calling `api_timesheets_get`, must conform to the pattern `/[\\d|,]+/`")  # noqa: E501
-        if 'project' in params and not re.search(r'\\d+', params['project']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `project` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'projects' in params and not re.search(r'[\\d|,]+', params['projects']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `projects` when calling `api_timesheets_get`, must conform to the pattern `/[\\d|,]+/`")  # noqa: E501
-        if 'activity' in params and not re.search(r'\\d+', params['activity']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `activity` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'activities' in params and not re.search(r'[\\d|,]+', params['activities']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `activities` when calling `api_timesheets_get`, must conform to the pattern `/[\\d|,]+/`")  # noqa: E501
-        if 'page' in params and not re.search(r'\\d+', params['page']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `page` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'size' in params and not re.search(r'\\d+', params['size']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'order_by' in params and not re.search(r'id|begin|end|rate', params['order_by']):  # noqa: E501
+        if 'user' in params and not re.match(r'\d+$|all', params['user']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `user` when calling `api_timesheets_get`, must conform to the pattern `\d+$|all`")  # noqa: E501
+        if 'customer' in params and not re.match(r'\d+$', params['customer']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `customer` when calling `api_timesheets_get`, must conform to the pattern `/\d+$/`")  # noqa: E501
+        if 'customers' in params and not re.match(r'(\d+,?)+$', params['customers']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `customers` when calling `api_timesheets_get`, must conform to the pattern `(\d+,?)+$`")  # noqa: E501
+        if 'project' in params and not re.match(r'\d+$', params['project']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `project` when calling `api_timesheets_get`, must conform to the pattern `\d+$`")  # noqa: E501
+        if 'projects' in params and not re.match(r'(\d+,?)+$', params['projects']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `projects` when calling `api_timesheets_get`, must conform to the pattern `(\d+,?)+$`")  # noqa: E501
+        if 'activity' in params and not re.match(r'\d+$', params['activity']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `activity` when calling `api_timesheets_get`, must conform to the pattern `\d+$`")  # noqa: E501
+        if 'activities' in params and not re.match(r'(\d+,?)+$', params['activities']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `activities` when calling `api_timesheets_get`, must conform to the pattern `(\d+,?)+$`")  # noqa: E501
+        if 'page' in params and not re.match(r'\d+$', params['page']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `page` when calling `api_timesheets_get`, must conform to the pattern `\d+$`")  # noqa: E501
+        if 'size' in params and not re.match(r'\d+$', params['size']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `size` when calling `api_timesheets_get`, must conform to the pattern `\d+$`")  # noqa: E501
+        if 'order_by' in params and not re.match(r'id|begin|end|rate', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_timesheets_get`, must conform to the pattern `/id|begin|end|rate/`")  # noqa: E501
-        if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
+        if 'order' in params and not re.match(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_timesheets_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
-        if 'exported' in params and not re.search(r'0|1', params['exported']):  # noqa: E501
+        if 'exported' in params and not re.match(r'0|1', params['exported']):  # noqa: E501
             raise ValueError("Invalid value for parameter `exported` when calling `api_timesheets_get`, must conform to the pattern `/0|1/`")  # noqa: E501
-        if 'active' in params and not re.search(r'0|1', params['active']):  # noqa: E501
+        if 'active' in params and not re.match(r'0|1', params['active']):  # noqa: E501
             raise ValueError("Invalid value for parameter `active` when calling `api_timesheets_get`, must conform to the pattern `/0|1/`")  # noqa: E501
-        if 'full' in params and not re.search(r'true', params['full']):  # noqa: E501
+        if 'full' in params and not re.match(r'true', params['full']):  # noqa: E501
             raise ValueError("Invalid value for parameter `full` when calling `api_timesheets_get`, must conform to the pattern `/true/`")  # noqa: E501
         collection_formats = {}
 
