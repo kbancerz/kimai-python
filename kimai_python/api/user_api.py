@@ -91,11 +91,11 @@ class UserApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'visible' in params and not re.search(r'1|2|3', params['visible']):  # noqa: E501
+        if 'visible' in params and not re.match(r'1|2|3', params['visible']):  # noqa: E501
             raise ValueError("Invalid value for parameter `visible` when calling `api_users_get`, must conform to the pattern `/1|2|3/`")  # noqa: E501
-        if 'order_by' in params and not re.search(r'id|username|alias|email', params['order_by']):  # noqa: E501
+        if 'order_by' in params and not re.match(r'id|username|alias|email', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_users_get`, must conform to the pattern `/id|username|alias|email/`")  # noqa: E501
-        if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
+        if 'order' in params and not re.match(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_users_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         collection_formats = {}
 

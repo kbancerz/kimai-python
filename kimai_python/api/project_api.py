@@ -101,17 +101,17 @@ class ProjectApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'customer' in params and not re.search(r'\\d+', params['customer']):  # noqa: E501
+        if 'customer' in params and not re.match(r'\d+', params['customer']):  # noqa: E501
             raise ValueError("Invalid value for parameter `customer` when calling `api_projects_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'customers' in params and not re.search(r'[\\d|,]+', params['customers']):  # noqa: E501
+        if 'customers' in params and not re.match(r'[\d|,]+', params['customers']):  # noqa: E501
             raise ValueError("Invalid value for parameter `customers` when calling `api_projects_get`, must conform to the pattern `/[\\d|,]+/`")  # noqa: E501
-        if 'visible' in params and not re.search(r'\\d+', params['visible']):  # noqa: E501
+        if 'visible' in params and not re.match(r'\d+', params['visible']):  # noqa: E501
             raise ValueError("Invalid value for parameter `visible` when calling `api_projects_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'ignore_dates' in params and not re.search(r'1', params['ignore_dates']):  # noqa: E501
+        if 'ignore_dates' in params and not re.match(r'1', params['ignore_dates']):  # noqa: E501
             raise ValueError("Invalid value for parameter `ignore_dates` when calling `api_projects_get`, must conform to the pattern `/1/`")  # noqa: E501
-        if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
+        if 'order' in params and not re.match(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_projects_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
-        if 'order_by' in params and not re.search(r'id|name|customer', params['order_by']):  # noqa: E501
+        if 'order_by' in params and not re.match(r'id|name|customer', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_projects_get`, must conform to the pattern `/id|name|customer/`")  # noqa: E501
         collection_formats = {}
 
