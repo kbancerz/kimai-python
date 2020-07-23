@@ -1,13 +1,13 @@
-# ProjectRate
+# ActivityExpanded
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**project** | **int** |  | [optional] 
 **id** | **int** |  | [optional] 
-**user** | [**User**](User.md) |  | [optional] 
-**rate** | **float** |  | [optional] 
-**internal_rate** | **float** |  | [optional] 
-**is_fixed** | **bool** |  | 
+**name** | **str** |  | 
+**visible** | **bool** |  | 
+**color** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

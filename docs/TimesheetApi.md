@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **api_timesheets_active_get**
-> list[TimesheetSubCollection] api_timesheets_active_get()
+> list[TimesheetCollectionExpanded] api_timesheets_active_get()
 
 Returns the collection of active timesheet records
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[TimesheetSubCollection]**](TimesheetSubCollection.md)
+[**list[TimesheetCollectionExpanded]**](TimesheetCollectionExpanded.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_timesheets_get**
-> list[TimesheetCollection] api_timesheets_get(user=user, customer=customer, customers=customers, project=project, projects=projects, activity=activity, activities=activities, page=page, size=size, tags=tags, order_by=order_by, order=order, begin=begin, end=end, exported=exported, active=active, full=full, term=term)
+> list[TimesheetCollection] api_timesheets_get(user=user, customer=customer, customers=customers, project=project, projects=projects, activity=activity, activities=activities, page=page, size=size, tags=tags, order_by=order_by, order=order, begin=begin, end=end, exported=exported, active=active, full=full, term=term, modified_after=modified_after)
 
 Returns a collection of timesheet records
 
@@ -113,12 +113,13 @@ begin = 'begin_example' # str | Only records after this date will be included (f
 end = 'end_example' # str | Only records before this date will be included (format: HTML5) (optional)
 exported = 'exported_example' # str | Use this flag if you want to filter for export state. Allowed values: 0=not exported, 1=exported (default: all) (optional)
 active = 'active_example' # str | Filter for running/active records. Allowed values: 0=stopped, 1=active (default: all) (optional)
-full = 'full_example' # str | Allows to fetch fully serialized objects including subresources (TimesheetSubCollection). Allowed values: true (default: false) (optional)
+full = 'full_example' # str | Allows to fetch fully serialized objects including subresources. Allowed values: true (default: false) (optional)
 term = 'term_example' # str | Free search term (optional)
+modified_after = 'modified_after_example' # str | Only records changed after this date will be included (format: HTML5). Available since Kimai 1.10 and works only for records that were created/updated since then. (optional)
 
 try:
     # Returns a collection of timesheet records
-    api_response = api_instance.api_timesheets_get(user=user, customer=customer, customers=customers, project=project, projects=projects, activity=activity, activities=activities, page=page, size=size, tags=tags, order_by=order_by, order=order, begin=begin, end=end, exported=exported, active=active, full=full, term=term)
+    api_response = api_instance.api_timesheets_get(user=user, customer=customer, customers=customers, project=project, projects=projects, activity=activity, activities=activities, page=page, size=size, tags=tags, order_by=order_by, order=order, begin=begin, end=end, exported=exported, active=active, full=full, term=term, modified_after=modified_after)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TimesheetApi->api_timesheets_get: %s\n" % e)
@@ -144,8 +145,9 @@ Name | Type | Description  | Notes
  **end** | **str**| Only records before this date will be included (format: HTML5) | [optional] 
  **exported** | **str**| Use this flag if you want to filter for export state. Allowed values: 0&#x3D;not exported, 1&#x3D;exported (default: all) | [optional] 
  **active** | **str**| Filter for running/active records. Allowed values: 0&#x3D;stopped, 1&#x3D;active (default: all) | [optional] 
- **full** | **str**| Allows to fetch fully serialized objects including subresources (TimesheetSubCollection). Allowed values: true (default: false) | [optional] 
+ **full** | **str**| Allows to fetch fully serialized objects including subresources. Allowed values: true (default: false) | [optional] 
  **term** | **str**| Free search term | [optional] 
+ **modified_after** | **str**| Only records changed after this date will be included (format: HTML5). Available since Kimai 1.10 and works only for records that were created/updated since then. | [optional] 
 
 ### Return type
 
@@ -685,7 +687,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_timesheets_recent_get**
-> list[TimesheetSubCollection] api_timesheets_recent_get(user=user, begin=begin, size=size)
+> list[TimesheetCollectionExpanded] api_timesheets_recent_get(user=user, begin=begin, size=size)
 
 Returns the collection of recent user activities
 
@@ -732,7 +734,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[TimesheetSubCollection]**](TimesheetSubCollection.md)
+[**list[TimesheetCollectionExpanded]**](TimesheetCollectionExpanded.md)
 
 ### Authorization
 

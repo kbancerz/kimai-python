@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**api_config_i18n_get**](DefaultApi.md#api_config_i18n_get) | **GET** /api/config/i18n | Returns the user specific locale configuration
-[**api_config_timesheet_get**](DefaultApi.md#api_config_timesheet_get) | **GET** /api/config/timesheet | Returns the instance specific timesheet configuration
+[**api_config_timesheet_get**](DefaultApi.md#api_config_timesheet_get) | **GET** /api/config/timesheet | Returns the timesheet configuration
 [**api_ping_get**](DefaultApi.md#api_ping_get) | **GET** /api/ping | A testing route for the API
 [**api_version_get**](DefaultApi.md#api_version_get) | **GET** /api/version | Returns information about the Kimai release
 
@@ -66,7 +66,7 @@ This endpoint does not need any parameter.
 # **api_config_timesheet_get**
 > TimesheetConfig api_config_timesheet_get()
 
-Returns the instance specific timesheet configuration
+Returns the timesheet configuration
 
 ### Example
 ```python
@@ -91,7 +91,7 @@ configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 api_instance = kimai_python.DefaultApi(kimai_python.ApiClient(configuration))
 
 try:
-    # Returns the instance specific timesheet configuration
+    # Returns the timesheet configuration
     api_response = api_instance.api_config_timesheet_get()
     pprint(api_response)
 except ApiException as e:

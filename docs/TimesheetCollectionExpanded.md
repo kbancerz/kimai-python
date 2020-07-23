@@ -1,16 +1,16 @@
-# TimesheetCollection
+# TimesheetCollectionExpanded
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activity** | **int** |  | [optional] 
-**project** | **int** |  | [optional] 
 **user** | **int** |  | [optional] 
 **tags** | **list[str]** |  | [optional] 
 **id** | **int** |  | [optional] 
 **begin** | **datetime** |  | 
 **end** | **datetime** |  | [optional] 
 **duration** | **int** |  | [optional] 
+**activity** | [**list[ActivityExpanded]**](ActivityExpanded.md) |  | 
+**project** | [**list[ProjectExpanded]**](ProjectExpanded.md) |  | 
 **description** | **str** |  | [optional] 
 **rate** | **float** |  | [optional] 
 **internal_rate** | **float** |  | [optional] 

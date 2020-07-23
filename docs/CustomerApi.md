@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **api_customers_get**
-> list[CustomerEntity] api_customers_get(visible=visible, order=order, order_by=order_by, term=term)
+> list[CustomerCollection] api_customers_get(visible=visible, order=order, order_by=order_by, term=term)
 
 Returns a collection of customers
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[CustomerEntity]**](CustomerEntity.md)
+[**list[CustomerCollection]**](CustomerCollection.md)
 
 ### Authorization
 

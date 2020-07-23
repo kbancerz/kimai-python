@@ -42,7 +42,7 @@ configuration.api_key['X-AUTH-USER'] = 'YOUR_API_KEY'
 api_instance = kimai_python.ProjectApi(kimai_python.ApiClient(configuration))
 customer = 'customer_example' # str | Customer ID to filter projects (optional)
 customers = 'customers_example' # str | Comma separated list of customer IDs to filter projects (optional)
-visible = 'visible_example' # str | Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default; 1) (optional)
+visible = 'visible_example' # str | Visibility status to filter projects. Allowed values: 1=visible, 2=hidden, 3=both (default: 1) (optional)
 start = 'start_example' # str | Only projects that started before this date will be included. Allowed format: HTML5 (default: now, if end is also empty) (optional)
 end = 'end_example' # str | Only projects that ended after this date will be included. Allowed format: HTML5 (default: now, if start is also empty) (optional)
 ignore_dates = 'ignore_dates_example' # str | If set, start and end are completely ignored. Allowed values: 1 (default: off) (optional)
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **customer** | **str**| Customer ID to filter projects | [optional] 
  **customers** | **str**| Comma separated list of customer IDs to filter projects | [optional] 
- **visible** | **str**| Visibility status to filter projects. Allowed values: 1&#x3D;visible, 2&#x3D;hidden, 3&#x3D;both (default; 1) | [optional] 
+ **visible** | **str**| Visibility status to filter projects. Allowed values: 1&#x3D;visible, 2&#x3D;hidden, 3&#x3D;both (default: 1) | [optional] 
  **start** | **str**| Only projects that started before this date will be included. Allowed format: HTML5 (default: now, if end is also empty) | [optional] 
  **end** | **str**| Only projects that ended after this date will be included. Allowed format: HTML5 (default: now, if start is also empty) | [optional] 
  **ignore_dates** | **str**| If set, start and end are completely ignored. Allowed values: 1 (default: off) | [optional] 
