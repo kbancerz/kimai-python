@@ -12,7 +12,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "kimai-python"
-VERSION = "0.2.7"
+VERSION = "0.2.8"
 # To install the library, run the following
 #
 # python setup.py install
