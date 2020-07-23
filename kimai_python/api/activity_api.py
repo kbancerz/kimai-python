@@ -99,19 +99,19 @@ class ActivityApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'project' in params and not re.search(r'\\d+', params['project']):  # noqa: E501
+        if 'project' in params and not re.match(r'\d+', params['project']):  # noqa: E501
             raise ValueError("Invalid value for parameter `project` when calling `api_activities_get`, must conform to the pattern `/\\d+/`")  # noqa: E501
-        if 'projects' in params and not re.search(r'[\\d|,]+', params['projects']):  # noqa: E501
+        if 'projects' in params and not re.match(r'[\d|,]+', params['projects']):  # noqa: E501
             raise ValueError("Invalid value for parameter `projects` when calling `api_activities_get`, must conform to the pattern `/[\\d|,]+/`")  # noqa: E501
-        if 'visible' in params and not re.search(r'1|2|3', params['visible']):  # noqa: E501
+        if 'visible' in params and not re.match(r'1|2|3', params['visible']):  # noqa: E501
             raise ValueError("Invalid value for parameter `visible` when calling `api_activities_get`, must conform to the pattern `/1|2|3/`")  # noqa: E501
-        if 'globals' in params and not re.search(r'true', params['globals']):  # noqa: E501
+        if 'globals' in params and not re.match(r'true', params['globals']):  # noqa: E501
             raise ValueError("Invalid value for parameter `globals` when calling `api_activities_get`, must conform to the pattern `/true/`")  # noqa: E501
-        if 'globals_first' in params and not re.search(r'true|false', params['globals_first']):  # noqa: E501
+        if 'globals_first' in params and not re.match(r'true|false', params['globals_first']):  # noqa: E501
             raise ValueError("Invalid value for parameter `globals_first` when calling `api_activities_get`, must conform to the pattern `/true|false/`")  # noqa: E501
-        if 'order_by' in params and not re.search(r'id|name|project', params['order_by']):  # noqa: E501
+        if 'order_by' in params and not re.match(r'id|name|project', params['order_by']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order_by` when calling `api_activities_get`, must conform to the pattern `/id|name|project/`")  # noqa: E501
-        if 'order' in params and not re.search(r'ASC|DESC', params['order']):  # noqa: E501
+        if 'order' in params and not re.match(r'ASC|DESC', params['order']):  # noqa: E501
             raise ValueError("Invalid value for parameter `order` when calling `api_activities_get`, must conform to the pattern `/ASC|DESC/`")  # noqa: E501
         collection_formats = {}
 
